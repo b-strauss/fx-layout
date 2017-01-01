@@ -1,0 +1,13 @@
+{
+  "name": "fx-layout",
+  "version": "0.1.0",
+  "private": true,
+  "description": "flexbox layout system",
+  "homepage": "https://github.com/b-strauss/fx-layout",
+  "bugs": "https://github.com/b-strauss/fx-layout/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-strauss/fx-layout.git"
+  }
+}
