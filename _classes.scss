@@ -1,0 +1,261 @@
+@import "mixins";
+
+// container styles
+.fx-layout {
+  // orientation
+  &.horizontal,
+  &.horizontal-reverse,
+  &.vertical,
+  &.vertical-reverse {
+    @include fx-layout;
+  }
+
+  &.inline {
+    @include fx-layout-inline;
+  }
+
+  &.horizontal {
+    @include fx-horizontal;
+  }
+
+  &.horizontal-reverse {
+    @include fx-horizontal-reverse;
+  }
+
+  &.vertical {
+    @include fx-vertical;
+  }
+
+  &.vertical-reverse {
+    @include fx-vertical-reverse;
+  }
+
+  // wrapping
+  &.wrap {
+    @include fx-wrap;
+  }
+
+  &.wrap-reverse {
+    @include fx-wrap-reverse;
+  }
+
+  &.no-wrap {
+    @include fx-no-wrap;
+  }
+
+  // alignment in cross axis
+  &.cross-start {
+    @include fx-cross-start;
+  }
+
+  &.cross-center {
+    @include fx-cross-center;
+  }
+
+  &.cross-end {
+    @include fx-cross-end;
+  }
+
+  &.cross-stretch {
+    @include fx-cross-stretch;
+  }
+
+  &.cross-baseline {
+    @include fx-cross-baseline;
+  }
+
+  // alignment in main axis
+  &.main-start {
+    @include fx-main-start;
+  }
+
+  &.main-center {
+    @include fx-main-center;
+  }
+
+  &.main-end {
+    @include fx-main-end;
+  }
+
+  &.main-around {
+    @include fx-main-around;
+  }
+
+  &.main-between {
+    @include fx-main-between;
+  }
+
+  // alignment of wrapped content
+  &.content-start {
+    @include fx-content-start;
+  }
+
+  &.content-center {
+    @include fx-content-center;
+  }
+
+  &.content-end {
+    @include fx-content-end;
+  }
+
+  &.content-around {
+    @include fx-content-around;
+  }
+
+  &.content-between {
+    @include fx-content-between;
+  }
+
+  &.content-stretch {
+    @include fx-content-stretch;
+  }
+
+  // combined centering
+  &.center-center {
+    @include fx-center-center;
+  }
+
+  &.center-center-center {
+    @include fx-center-center-center;
+  }
+}
+
+// self alignment
+.self-auto {
+  @include fx-self-auto;
+}
+
+.self-start {
+  @include fx-self-start;
+}
+
+.self-center {
+  @include fx-self-center;
+}
+
+.self-end {
+  @include fx-self-end;
+}
+
+.self-stretch {
+  @include fx-self-stretch;
+}
+
+.self-baseline {
+  @include fx-self-baseline;
+}
+
+// spacing
+.flex-none {
+  @include fx-flex(none);
+}
+
+.flex,
+.flex-1 {
+  @include fx-flex(1);
+}
+
+.flex-2 {
+  @include fx-flex(2);
+}
+
+.flex-3 {
+  @include fx-flex(3);
+}
+
+.flex-4 {
+  @include fx-flex(4);
+}
+
+.flex-5 {
+  @include fx-flex(5);
+}
+
+.flex-6 {
+  @include fx-flex(6);
+}
+
+.flex-7 {
+  @include fx-flex(7);
+}
+
+.flex-8 {
+  @include fx-flex(8);
+}
+
+.flex-9 {
+  @include fx-flex(9);
+}
+
+.flex-10 {
+  @include fx-flex(10);
+}
+
+.flex-11 {
+  @include fx-flex(11);
+}
+
+.flex-12 {
+  @include fx-flex(12);
+}
+
+// general purpose layout
+.block {
+  display: block;
+}
+
+// IE 10 support for HTML5 hidden attr
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fit {
+  @include fit;
+}
+
+body.fullbleed {
+  margin: 0;
+  height: 100vh;
+}
+
+.scroll {
+  @include scroll;
+}
+
+.scroll-x {
+  @include scroll-x;
+}
+
+.scroll-y {
+  @include scroll-y;
+}
+
+// fixed position
+
+.fixed-top {
+  @include fixed-top;
+}
+
+.fixed-right {
+  @include fixed-right;
+}
+
+.fixed-bottom {
+  @include fixed-bottom;
+}
+
+.fixed-left {
+  @include fixed-left;
+}

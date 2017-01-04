@@ -1,0 +1,205 @@
+@import "flexbox";
+
+@mixin fx-layout {
+  @include flexbox;
+}
+
+@mixin fx-layout-inline {
+  @include inline-flex;
+}
+
+// orientation
+@mixin fx-horizontal {
+  @include flex-direction(row);
+}
+
+@mixin fx-horizontal-reverse {
+  @include flex-direction(row-reverse);
+}
+
+@mixin fx-vertical {
+  @include flex-direction(column);
+}
+
+@mixin fx-vertical-reverse {
+  @include flex-direction(column-reverse);
+}
+
+// wrapping
+@mixin fx-wrap {
+  @include flex-wrap(wrap);
+}
+
+@mixin fx-wrap-reverse {
+  @include flex-wrap(wrap-reverse);
+}
+
+@mixin fx-no-wrap {
+  @include flex-wrap(nowrap);
+}
+
+// alignment in cross axis
+@mixin fx-cross-start {
+  @include align-items(flex-start);
+}
+
+@mixin fx-cross-center {
+  @include align-items(center);
+}
+
+@mixin fx-cross-end {
+  @include align-items(flex-end);
+}
+
+@mixin fx-cross-stretch {
+  @include align-items(stretch);
+}
+
+@mixin fx-cross-baseline {
+  @include align-items(baseline);
+}
+
+// alignment in main axis
+@mixin fx-main-start {
+  @include justify-content(flex-start);
+}
+
+@mixin fx-main-center {
+  @include justify-content(center);
+}
+
+@mixin fx-main-end {
+  @include justify-content(flex-end);
+}
+
+@mixin fx-main-around {
+  @include justify-content(space-around);
+}
+
+@mixin fx-main-between {
+  @include justify-content(space-between);
+}
+
+// alignment of wrapped content
+@mixin fx-content-start {
+  @include align-content(flex-start);
+}
+
+@mixin fx-content-center {
+  @include align-content(center);
+}
+
+@mixin fx-content-end {
+  @include align-content(flex-end);
+}
+
+@mixin fx-content-around {
+  @include align-content(space-around);
+}
+
+@mixin fx-content-between {
+  @include align-content(space-between);
+}
+
+@mixin fx-content-stretch {
+  @include align-content(stretch);
+}
+
+// combined centering
+@mixin fx-center-center {
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+@mixin fx-center-center-center {
+  @include align-items(center);
+  @include justify-content(center);
+  @include align-content(center);
+}
+
+// self alignment
+@mixin fx-self-auto {
+  @include align-self(auto);
+}
+
+@mixin fx-self-start {
+  @include align-self(flex-start);
+}
+
+@mixin fx-self-center {
+  @include align-self(center);
+}
+
+@mixin fx-self-end {
+  @include align-self(flex-end);
+}
+
+@mixin fx-self-stretch {
+  @include align-self(stretch);
+}
+
+@mixin fx-self-baseline {
+  @include align-self(baseline);
+}
+
+// spacing
+@mixin fx-flex($factor: 1) {
+  @include flex($factor);
+}
+
+// order
+@mixin fx-order($int) {
+  @include order($int);
+}
+
+// general purpose layout
+@mixin fit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+@mixin scroll-x {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
+
+@mixin scroll-y {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
+@mixin fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin fixed-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin fixed-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
