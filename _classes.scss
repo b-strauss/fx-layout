@@ -204,7 +204,6 @@
   display: block;
 }
 
-// IE 10 support for HTML5 hidden attr
 .hidden {
   display: none !important;
 }
@@ -243,7 +242,6 @@ body.fullbleed {
 }
 
 // fixed position
-
 .fixed-top {
   @include fixed-top;
 }
