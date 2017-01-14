@@ -1,7 +1,6 @@
 {
   "name": "fx-layout",
   "version": "1.0.0",
-  "private": true,
   "description": "flexbox layout system",
   "homepage": "https://github.com/b-strauss/fx-layout",
   "bugs": "https://github.com/b-strauss/fx-layout/issues",
